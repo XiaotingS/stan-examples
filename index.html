@@ -29,9 +29,17 @@
       </header>
       <section>
         <h1>
-<a id="example-models-in-stan" class="anchor" href="#example-models-in-stan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example models in stan</h1>
+<a id="a-place-to-store-stan-example-models" class="anchor" href="#a-place-to-store-stan-example-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>A place to store stan example models</h1>
 
-<p>Stan - <a href="http://mc-stan.org/">http://mc-stan.org/</a></p>
+<p>You can get stan <a href="http://mc-stan.org/">here</a>.</p>
+
+<h1>
+<a id="limited-dependent-variables" class="anchor" href="#limited-dependent-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limited Dependent Variables</h1>
+
+<h2>
+<a id="probit" class="anchor" href="#probit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Probit</h2>
+
+<p>The stan model <a href="limited-dv/probit.stan">here</a> implements a probit model. It requires a response variable y coded as 0 or 1 and an x matrix of predictor variables (with a column of 1's if you want an intercept). The model returns beta coefficients that represent the marginal effect of a one unit change on the latent utility scale. It also returns estimates of the latent utility for each observation. Location is fixed by assuming that y=1 if ystar&gt;0, and scale is fixed by assuming that the variance of the latent error term is 1.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/jabranham">jabranham</a></p>
