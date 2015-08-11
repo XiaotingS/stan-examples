@@ -1,5 +1,5 @@
 ---
-title: "Stan-examples"
+title: "Stan Examples"
 author: "J. Alexander Branham"
 date: ""
 output: 
